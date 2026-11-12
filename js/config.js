@@ -13,7 +13,7 @@
    quem protege os dados são as regras RLS do banco (arquivo 01_estrutura.sql).
    ===================================================================== */
 window.TF_CONFIG = {
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
+  SUPABASE_URL: "https://skvsruoupwrtbprcchzf.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_b4yNI9AZMn9TDwR78Yy1zA_Gx1lpbUj",
   BUCKET: "imoveis"
 };
