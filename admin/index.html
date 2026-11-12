@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel | Tiago Fernandes, Corretor de Imóveis</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#043a2f">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="boot" class="boot">Carregando painel…</div>
+
+<!-- Login / recuperação de senha -->
+<div id="auth" class="auth" hidden>
+  <div class="auth-box">
+    <div class="auth-logo"><img src="../img/estatico-03.jpg" alt=""><div><b>TIAGO FERNANDES</b><small>Painel do corretor</small></div></div>
+    <div id="authBody"></div>
+    <p class="auth-foot"><a href="../">&larr; Voltar ao site</a></p>
+  </div>
+</div>
+
+<!-- Painel -->
+<div id="app" class="app" hidden>
+  <aside id="side" class="side" aria-label="Menu do painel">
+    <div class="side-logo"><img src="../img/estatico-03.jpg" alt=""><div><b>TIAGO FERNANDES</b><small>Painel do corretor</small></div></div>
+    <nav id="nav">
+      <a href="#/dashboard" data-r="dashboard"><span class="ic">&#9638;</span>Resumo</a>
+      <a href="#/imoveis" data-r="imoveis"><span class="ic">&#8962;</span>Imóveis</a>
+      <a href="#/novo" data-r="novo"><span class="ic">&#43;</span>Novo imóvel</a>
+      <a href="../" target="_blank" rel="noopener"><span class="ic">&#8599;</span>Ver o site</a>
+    </nav>
+    <div class="side-foot">
+      <div id="who" class="who"></div>
+      <button type="button" class="btn ghost sm" id="btnPass">Alterar senha</button>
+      <button type="button" class="btn ghost sm" id="btnOut">Sair</button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <header class="top">
+      <button type="button" class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+      <h1 id="pageTitle">Painel</h1>
+      <a class="btn gold sm" href="#/novo">+ Novo imóvel</a>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="../js/config.js"></script>
+<script src="../js/imoveis-db.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
